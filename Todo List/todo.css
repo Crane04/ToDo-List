@@ -1,0 +1,66 @@
+body{
+        
+    background-color: #333;
+    height: 100vh;
+    font-family: cursive;
+    
+}
+h1{
+    text-align: center;
+    color: white;
+}
+input{
+    width: 65%;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid purple;
+}
+button{
+    padding: 7px;
+    border-radius: 5px;
+    border: 2px solid purple;
+    background-color: purple;
+    color: white;
+    width:20%;
+    font-size: large;
+    transition: 1.5s;
+}
+button:hover{
+    background-color: white;
+    color: purple;
+}
+div{
+    color: white;
+    margin-left: -40px;
+     
+}
+ul{
+    list-style: none;
+    width: 80%;  
+   
+}
+li{
+    
+    background-color: purple;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 2s;
+}
+li:hover{
+    background:white;
+    color: #333;
+  
+}
+ul button{
+    float: right;
+    padding: 1px;
+    width:30px;
+    background-color: white;
+    color: #333;
+}
+ul button:hover{
+    background-color: purple;
+    color: white;
+}
