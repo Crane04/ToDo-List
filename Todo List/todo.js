@@ -9,23 +9,23 @@ savedTasks.forEach(create)
 function create(text){
     //list
    
-    let li=document.createElement("li")
-    li.innerHTML=text
+    let node=document.createElement("li")
+    node.innerHTML=text
     
     let textNode=inpEl.value
-    li.append(textNode)
-    list.append(li)
-    list.insertBefore(li,list.childNodes[0])
+    node.append(textNode)
+    list.append(node)
+    list.insertBefore(node,list.childNodes[0])
     //delete button
     let delBtn=document.createElement("button")
     let cancel="X"
     delBtn.append(cancel)
-    li.append(delBtn)
+    node.append(delBtn)
     
     
     
     delBtn.addEventListener("click", function(){
-    li.parentNode.removeChild(li)
+    node.parentNode.removeChild(node)
     savedTasks=savedTasks.filter((e)=>
         e!==text)
         localStorage.setItem("tasks",JSON.stringify(savedTasks))
