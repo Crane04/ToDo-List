@@ -25,10 +25,14 @@ function create(text){
     
     
     delBtn.addEventListener("click", function(){
+   if(confirm("Are you sure you want to delete?")){
     node.parentNode.removeChild(node)
     savedTasks=savedTasks.filter((e)=>
         e!==text)
         localStorage.setItem("tasks",JSON.stringify(savedTasks))
+   }else{
+    localStorage.setItem("tasks",JSON.stringify(savedTasks))
+   }
     
 })
     
